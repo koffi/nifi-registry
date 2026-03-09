@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1773021247925,
+    "description" : "sauvegarde du flow nifi",
+    "identifier" : "Datapipelineitas",
+    "lastModifiedTimestamp" : 1773021247925,
+    "name" : "Data_pipeline_itas",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
