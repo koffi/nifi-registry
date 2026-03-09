@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1773021126965,
+    "description" : "une description",
+    "identifier" : "demoflow",
+    "lastModifiedTimestamp" : 1773021126965,
+    "name" : "demo_flow",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
