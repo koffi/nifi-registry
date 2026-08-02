@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1785699758971,
+    "description" : "",
+    "identifier" : "Initial-Load-DGI-SqlDB",
+    "lastModifiedTimestamp" : 1785699758971,
+    "name" : "Initial-Load-DGI-SqlDB",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
