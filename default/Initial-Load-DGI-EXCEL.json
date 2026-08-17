@@ -1877,6 +1877,49 @@
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.7.2"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "0deabab4-01a0-1000-51fc-6958a5f8259c",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "DuplicateFlowFile",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1272.0,
+        "y" : -112.0
+      },
+      "properties" : {
+        "Number of Copies" : "100"
+      },
+      "propertyDescriptors" : {
+        "Number of Copies" : {
+          "displayName" : "Number of Copies",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Number of Copies",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.DuplicateFlowFile",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
         "artifact" : "nifi-aws-nar",
         "group" : "org.apache.nifi",
         "version" : "2.7.2"
@@ -1891,8 +1934,8 @@
       "name" : "PutS3Object",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 744.0,
-        "y" : -128.0
+        "x" : 1328.0,
+        "y" : 64.0
       },
       "properties" : {
         "FullControl User List" : "${s3.permissions.full.users}",
@@ -1907,7 +1950,7 @@
         "Storage Class" : "STANDARD",
         "Multipart Part Size" : "5 GB",
         "Remove Tag Prefix" : "false",
-        "Object Key" : "${now():format(\"yyyy/MM/dd\")}/reference/${filename}",
+        "Object Key" : "/reference/incoming/${filename}",
         "Multipart Threshold" : "5 GB",
         "Temporary Directory Multipart State" : "${java.io.tmpdir}",
         "Bucket" : "bronze",
@@ -2647,6 +2690,6 @@
   "snapshotMetadata" : {
     "author" : "admin",
     "flowIdentifier" : "Initial-Load-DGI-EXCEL",
-    "timestamp" : 1785699734269
+    "timestamp" : 1786940275958
   }
 }
